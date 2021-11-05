@@ -15,9 +15,12 @@
 
 /* custom fonts */
 @font-face {
-    font-family: Exo-Font;
-    src: url('../fonts/Exo-Medium.otf');
+    font-family: Poppins;
+    src: url('../fonts/Poppins/Poppins-Regular.ttf');
 }
+
+
+
 /* end of custom fonts */
 
 
