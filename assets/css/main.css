@@ -12,8 +12,18 @@ body{
     overflow-x: hidden !important;
 }
 
-/* general styling */
+:root{
+    --background-color-1: #235bf6;
+    --background-color-2:#3a6cf4;
+    --background-color-3: #4e9eff;
+    --background-color-4: #000016;
+    --box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    --black-color: black;
+    --white-color: #fff;
+}
 
+/* general styling */
+  
 section{
     padding: 100px 100px;
 }
@@ -28,7 +38,7 @@ section{
 
 .section-title{
     position: relative;
-    color: #3a6cf4;
+    color: var(--background-color-2);
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 60px;
@@ -41,7 +51,7 @@ section{
     left: 50%;
     width: 140px;
     height: 4px;
-    background: #3a6cf4;
+    background: var(--background-color-2);
     transform: translateX(-50%);
 }
 
@@ -53,7 +63,7 @@ section{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #3a6cf4;
+    background: var(--background-color-2);
     transform: translateX(-50%);
 }
 
@@ -74,8 +84,8 @@ section{
 }
 
 .btn{
-    color: #fff;
-    background: #3a6cf4;
+    color: var(--white-color);
+    background: var(--background-color-2);
     font-size: 1em;
     font-weight: 600;
     text-decoration: none;
@@ -91,7 +101,7 @@ section{
 }
 
 .btn:hover{
-    background: #235bf6;
+    background: var(--background-color-1);
 }
 /* end of general styling */
 
@@ -121,22 +131,22 @@ section{
 }
 
 .navbar.sticky{
-    background: #000016;
+    background: var(--background-color-4);
 }
 
 .navbar .brand{
-    color: #fff;
+    color: var(--white-color);
     font-size: 1.8em;
     font-weight: 700;
     text-decoration: none;
 }
 
 .navbar .brand span{
-    color: #3a6cf4;
+    color: var(--background-color-2);
 }
 
 .navbar.sticky.navbar .brand span{
-    color: #fff;
+    color: var(--white-color);
 }
 
 
@@ -146,7 +156,7 @@ section{
 }
 
 .navbar .menu li a{
-    color: #fff;
+    color: var(--white-color);
     font-size: 1.2em;
     font-weight: 500;
     margin-left: 30px;
@@ -155,18 +165,17 @@ section{
 }
 
 .navbar .menu li a:hover{
-    color: #3a6cf4;
+    color: var(--background-color-2);
 }
 
 .navbar.sticky.navbar .menu li a:hover{
-    color: #000;
+    color: var(--black-color);
 }
 
 /* end of navbar section */
 
 
 /* hero section */
-
 .main{
     position: relative;
     width: 100%;
@@ -188,7 +197,7 @@ section{
     height: 100%;
     top: 0;
     left: 0;
-    background: #111;
+    background: var(--black-color);
     opacity: .8;
     z-index: -1;
 }
@@ -198,7 +207,7 @@ section{
 }
 
 .main .content h2{
-    color: #fff;
+    color: var(--white-color);
     font-size: 2em;
     font-weight: 500;
 }
@@ -215,7 +224,7 @@ section{
 }
 
 .main .animated-text h3{
-    color: #4e9eff;
+    color: var(--background-color-3);
     font-size: 3em;
     font-weight: 700;
     line-height: 70px;
@@ -234,14 +243,14 @@ section{
 }
 
 .main .media-icons a{
-    color: #fff;
+    color: var(--white-color);
     font-size: 25px;
     margin-right: 30px;
     transition: color .3s ease;
 }
 
 .main .media-icons a:hover{
-    color: #3a6cf4;
+    color: var(--background-color-2);
 }
 
 
@@ -297,7 +306,7 @@ section{
 
 /* skills section */
 .skills{
-    background: #000016;
+    background: var(--background-color-4);
 }
 
 .skills .content{
@@ -305,7 +314,7 @@ section{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    color: #fff;
+    color: var(--white-color);
     margin-top: 20px;
 }
 
@@ -406,19 +415,19 @@ section{
 }
 
 .services .content .card{
-    background: #fff;
+    background: var(--white-color);
     width: 280px;
     margin: 10px;
     padding: 25px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    box-shadow: var(--box-shadow);
     border-radius: 10px;
 }
 
 .services .content .card .service-icon{
-    color: #3a6cf4;
+    color: var(--background-color-2);
     font-size: 8em;
     text-align: center;
     transition: transform .4s ease;
@@ -433,7 +442,7 @@ section{
 }
 
 .services .content .card .info h3{
-    color: #3a6cf4;
+    color: var(--background-color-2);
     font-weight: 1.2em;
     font-weight: 700;
     margin: 10px;
@@ -442,7 +451,7 @@ section{
 
 /* work section */
 .work{
-    background: #000016;
+    background: var(--background-color-4);
 }
 
 .work .content{
@@ -500,7 +509,7 @@ section{
 }
 
 .contact .content .row .card{
-    background: #fff;
+    background: var(--white-color);
     text-align: center;
     width: 240px;
     margin: 20px;
@@ -509,12 +518,12 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    box-shadow: var(--box-shadow);
     border-radius: 10px;
 }
 
 .contact .content .row .card .contact-icon{
-    color: #3a6cf4;
+    color: var(--background-color-2);
     font-size: 4em;
     transition: transform .4s ease;
 }
@@ -536,12 +545,12 @@ section{
 }
 
 .contact .contact-form{
-    background: #fff;
+    background: var(--white-color);
     max-width: 600px;
     margin-top: 50px;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
+    box-shadow: var(--box-shadow);
 }
 
 .contact .contact-form h3{
@@ -566,14 +575,14 @@ section{
     font-size: 1em;
     font-weight: 400;
     outline: none;
-    border: 1px solid #111;
+    border: 1px solid #333;
     border-radius: 5px;
     resize: none;
 }
 
 .contact .contact-form .input-box .send-btn{
-    color: #fff;
-    background: #3a6cf4;
+    color: var(--white-color);
+    background: var(--background-color-2);
     display: inline-block;
     font-size: 1.1em;
     font-weight: 500;
@@ -586,14 +595,14 @@ section{
 }
 
 .contact .contact-form .input-box .send-btn:hover{
-    background: #235bf6;
+    background: var(--background-color-1);
 }
 /* end of contact section */
 
 /* footer section */
 .footer{
-    background: #000016;
-    color: #fff;
+    background: var(--background-color-4);
+    color: var(--white-color);
     text-align: center;
     padding: 2em;
 }
@@ -609,7 +618,7 @@ section{
 }
 
 .footer p a{
-    color: #3a6cf4;
+    color: var(--background-color-2);
     font-weight: 600;
     text-decoration: none;
 }
@@ -649,7 +658,7 @@ section{
         display: block; 
         z-index: 999;
         transition: .3s ease;
-        color: #fff;
+        color: var(--white-color);
     }
 
     .menu-btn i.active::before{
@@ -657,7 +666,7 @@ section{
         font-size: 23px;
         font-family: FontAwesome;
         font-weight: normal;
-        color: #111;
+        color: var(--black-color);
     }
 
     .navbar{
@@ -670,7 +679,7 @@ section{
         width: 60%;
         right: -100%;
         top: 0;
-        background: #fff;
+        background: var(--white-color);
         text-align: center;
         padding-top: 80px;
         box-shadow: 0px 5px 25px rgba(1 1 1 / 15%);
@@ -685,7 +694,7 @@ section{
 } 
     .navbar .menu li a{
         display: inline-block;
-        color: black;
+        color: var(--black-color);
         font-size: 1.2em;
         margin: 10px;
         padding: 0 20px;
@@ -693,8 +702,8 @@ section{
     } 
 
     .navbar .menu li:hover a{
-        color: #fff !important;
-        background: #3a6cf4;
+        color: var(--white-color) !important;
+        background: var(--background-color-2);
     }
     
     .main .content h2 span{
@@ -703,11 +712,7 @@ section{
     }
 
     .main .animated-text h3{
-        color: #4e9eff;
         font-size: 2em;
-        font-weight: 700;
-        line-height: 70px;
-        letter-spacing: 1px;
     }
 
     .about .content{
@@ -757,12 +762,12 @@ section{
     position: fixed;
     height: 42px;
     width: 42px; 
-    background: #3a6cf4;
+    background: var(--background-color-2);
     right: 0;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
+    color: var(--white-color);
     z-index: 1;
     font-size: 30px;
     border-radius: 5px;
